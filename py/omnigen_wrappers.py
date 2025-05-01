@@ -20,9 +20,9 @@ from latent_formats import SDXL
 import latent_preview
 
 # OmniGen
-from OmniGen import OmniGen, OmniGenProcessor, OmniGenPipeline, OmniGenScheduler
-from OmniGen.utils import show_mem, show_shape, VAE_SCALE_FACTOR, flush_mem, free_mem
-from OmniGen.transformer import Phi3Config
+from .OmniGen import OmniGen, OmniGenProcessor, OmniGenPipeline, OmniGenScheduler
+from .OmniGen.utils import show_mem, show_shape, VAE_SCALE_FACTOR, flush_mem, free_mem
+from .OmniGen.transformer import Phi3Config
 
 
 class OmniGenProcessorWrapper(OmniGenProcessor):
