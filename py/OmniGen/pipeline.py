@@ -19,8 +19,8 @@ from diffusers.utils import (
 )
 from safetensors.torch import load_file
 
-from OmniGen import OmniGen, OmniGenProcessor, OmniGenScheduler
-from OmniGen.utils import show_mem, show_shape, VAE_SCALE_FACTOR, flush_mem
+from ..OmniGen import OmniGen, OmniGenProcessor, OmniGenScheduler
+from ..OmniGen.utils import show_mem, show_shape, VAE_SCALE_FACTOR, flush_mem
 
 EXAMPLE_DOC_STRING = """
     Examples:
