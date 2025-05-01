@@ -236,6 +236,29 @@ Parameters:
 - **seed**: The random seed used to generate the initial noise latents.
 
 
+Phi3 model
+Hello,
+
+Can you repair your node broken by the update on phi3 model in transformers ?
+
+I find a workarround to manualy patch "transformers" lib to preserve a phi3Old python module but it's a bad solution.
+
+if you take the old phimodel from transformers you can make a work arround
+https://github.com/AIFSH/OmniGen-ComfyUI/issues/38#issuecomment-2844480972
+
+Maybe the old Phi3 model could be forked in your node or this node shall be update with the new phi3 model 
+
+here my zip to manual patch transformers 
+
+[transformers_patch_phi3old.zip](https://github.com/user-attachments/files/19998694/transformers_patch_phi3old.zip)
+
+In my local install I replace in your node
+"Phi3Config" by "Phi3ConfigOld" in omnigen-set\py\OmniGen\model.py
+"Phi3Config" by "Phi3ConfigOld" in omnigen-set\py\OmniGen\transformer.py
+"Phi3ModelOld" by "Phi3ModelOld" in omnigen-set\py\OmniGen\transformer.py
+"Phi3Config" by "Phi3ConfigOld" in omnigen-set\py\omnigen_wrappers.py
+
+
 ## Statement
 
 This project follows the MIT license, Some of its functional code comes from other open-source projects.
