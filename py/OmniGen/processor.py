@@ -12,7 +12,7 @@ from torchvision import transforms
 from transformers import AutoTokenizer
 from huggingface_hub import snapshot_download
 
-from OmniGen.utils import (
+from ..OmniGen.utils import (
     create_logger,
     update_ema,
     requires_grad,
