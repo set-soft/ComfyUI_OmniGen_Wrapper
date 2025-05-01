@@ -13,8 +13,8 @@ from timm.models.vision_transformer import PatchEmbed, Attention, Mlp
 from huggingface_hub import snapshot_download
 from safetensors.torch import load_file
 
-from OmniGen.transformer import Phi3Config, Phi3Transformer
-from OmniGen.utils import show_mem, free_mem
+from ..OmniGen.transformer import Phi3Config, Phi3Transformer
+from ..OmniGen.utils import show_mem, free_mem
 # Only for debug, used to skip the model load, makes a fast start-up
 DISABLE_MODEL = False
 
