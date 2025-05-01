@@ -4,7 +4,7 @@ from typing import Optional, Dict, Any, Tuple, List
 
 import torch
 from transformers.cache_utils import Cache, DynamicCache, OffloadedCache
-from OmniGen.utils import flush_mem
+from ..OmniGen.utils import flush_mem
 
 
 class OmniGenCache(DynamicCache):
